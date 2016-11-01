@@ -17,12 +17,12 @@ JS算法习题，每周更新，欢迎加入
 10 9 8 7 6 5 4 3 2 1
 
 ##解例:
-``
+```
 function reverseArray(arr) {  
     return arr.reverse()  
 } 
 console.log(reverseArray([1,2,3,4,5,6,7,8,9,10]));
-``
+```
 ---
 #目录
 * [20161101]猴子吃桃问题-H0
