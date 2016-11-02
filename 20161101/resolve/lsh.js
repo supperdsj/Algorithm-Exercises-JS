@@ -1,3 +1,6 @@
+/**
+ * Created by lsh on 2016/11/1
+ */
 function getAllPeach(day) {
     var peaches = 1;
     for (var i=0; i< day; i++) {
@@ -13,4 +16,4 @@ console.log("输入的天数：11");
 console.log("------------");
 
 console.log("桃子总数：", getAllPeach(3));
-console.log("桃子总数：", getAllPeach(11))
+console.log("桃子总数：", getAllPeach(11));
