@@ -6,8 +6,6 @@ function isNarcissisticNumber(num){
         var firstNum = (num%100)%10;
         var twoNum = (num%100 - firstNum)/10;
         var threeNum = (num - num%100)/100;
-
-
         if( Math.pow( firstNum , 3 ) + Math.pow( twoNum , 3 ) + Math.pow( threeNum , 3 ) == num){
             return console.log(num + '是一个水仙花数 , yes' );
         }else{
