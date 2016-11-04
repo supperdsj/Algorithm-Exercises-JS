@@ -24,8 +24,8 @@
 // Math.abs( x ),返回一个数字的绝对值   Math.Round(526.925, 3);四舍五入
 function angle(clock){
     h_clock = clock.split(":");
-    hour = h_clock[0]*30+h_clock[1]/2.0;
-    minute = h_clock[1]*6.0;
+    hour = h_clock[0]*30+h_clock[1]/2.0;//小时走得角度
+    minute = h_clock[1]*6.0;//分钟走的角度
     angle = Math.abs(hour-minute);
     if(angle>180){
         angle = 360-angle;
