@@ -4,6 +4,7 @@
 
 var a = '((1+2)*5+1)/4';
 var b = '1.000+2/4';
+
 function resolveStr(str) {
     str = str.replace('+', '!+').replace('-', '!-').replace('*', '!*').replace('/', '!/');
     while (str.indexOf('(') >= 0) {
@@ -30,22 +31,27 @@ function resolveAllOperator(str) {
     return str;
 }
 function resolveSingleOperator(operator, str) {
-    while (str.indexOf('!' + operator) >= 0) {
-        var tempA = str.split('!' + operator);
-        var tempB = tempA[1].split('!');
-        tempB[0] = tempB[0] + ' ' + operator;
-        tempA[1] = tempB.join('!');
-        var result = tempA[0] + ' ' + tempA[1];
-        for (var i = 2; i < tempA.length; i++) {
-            result += '!' + operator + tempA[i];
-        }
-        str = result;
-    }
+    // todo:字符串分割
+    // while (str.indexOf('!' + operator) >= 0) {
+        // var tempA = str.split('!' + operator);
+        // var tempB = tempA[1].split('!');
+        // tempB[0] = tempB[0] + ' ' + operator;
+        // tempA[1] = tempB.join('!');
+        // var result = tempA[0] + ' ' + tempA[1];
+        // for (var i = 2; i < tempA.length; i++) {
+        //     result += '!' + operator + tempA[i];
+        // }
+        // str = result;
+    // }
     return str;
 }
 function formats(str, operator) {
     return str.split(' ' + operator).join(operator).split(operator + ' ').join(operator).split(operator).join(' ' + operator + ' ');
 }
+
+console.log(resolveStr(a));
+console.log(resolveStr(b));
+
 // function resolveStr(str) {
 //     var oStack = [];
 //     var result = '';
@@ -88,5 +94,3 @@ function formats(str, operator) {
 //         result = result + ' ' + oStack.pop();
 //     }
 // }
-console.log(resolveStr(b));
-console.log(resolveStr(a));
