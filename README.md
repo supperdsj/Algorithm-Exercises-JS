@@ -38,3 +38,8 @@ console.log(reverseArray([1,2,3,4,5,6,7,8,9,10]));
 * [[20161110]素数求和问题-H2](20161110/quiz.md)
 * [[20161111]你会加吗？-H2](20161111/quiz.md)
 * [[20161112]月老的烦恼（1）-H3](20161112/quiz.md)
+* [[20161114]Elimination Game-H1](20161114/quiz.md)
+* [[20161115]Is Subsequence-H1](20161115/quiz.md)
+* [[20161116]Longest Palindrome-H2](20161116/quiz.md)
+* [[20161117]Integer Break-H3](20161117/quiz.md)
+* [[20161118]Partition Equal Subset Sum-H4](20161118/quiz.md)
